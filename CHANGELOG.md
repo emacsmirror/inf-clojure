@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## 3.4.0 (2026-02-27)
+
 ### New features
 
 - [#57](https://github.com/clojure-emacs/inf-clojure/issues/57): Add `inf-clojure-show-var-meta` command (`C-c C-S-m`) to display a var's metadata.
@@ -24,6 +26,8 @@
 - Fix `inf-clojure--clojure-buffer-p` to work on Emacs 28-29 (`derived-mode-p` does not accept a list before Emacs 30).
 - [#219](https://github.com/clojure-emacs/inf-clojure/issues/219): Fix `project-root` error when no project is detected (e.g. Squint REPL outside a project).
 - [#136](https://github.com/clojure-emacs/inf-clojure/issues/136): Fix preoutput filter to handle chunked comint output correctly, preventing spurious newlines (#153) and improving reliability of output filtering.
+- Fix node-babashka auto-detection by adding its startup form entry.
+- [#149](https://github.com/clojure-emacs/inf-clojure/issues/149): Show confirmation message after `inf-clojure-set-ns`.
 
 ## 3.3.0 (2025-05-25)
 
